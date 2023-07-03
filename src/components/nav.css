@@ -12,3 +12,14 @@ nav a {
   color: white;
 }
 
+nav div {
+  display: flex;
+  gap: 10px;
+}
+
+nav .fa-chevron-left,
+nav .fa-microphone,
+nav .fa-cog {
+  display: flex;
+  align-items: center;
+}
