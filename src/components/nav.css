@@ -7,3 +7,8 @@ nav {
   padding: 10px 10px;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
