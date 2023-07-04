@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import getCountries from '../redux/thunk/countries';
 import Header from './Navigation';
-import CountryItem from './CountryItem';
+import CountryItem from './CountryList';
 
 const Countries = () => {
   const { countries, totalTodayConfirmed } = useSelector((state) => state.countries);
