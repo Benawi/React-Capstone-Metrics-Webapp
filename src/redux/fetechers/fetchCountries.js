@@ -1,9 +1,10 @@
 import axios from 'axios';
-
-const fetchCountriesCases = async () => axios.get('https://disease.sh/v3/covid-19/countries')
+const URLC='https://disease.sh/v3/covid-19/countries';
+const URLA='https://disease.sh/v3/covid-19/all';
+const fetchCountriesCases = async () => axios.get(URLC)
   .then((response) => response.data);
 
-const fetchTotalCases = async () => axios.get('https://disease.sh/v3/covid-19/all')
+const fetchTotalCases = async () => axios.get(URLA)
   .then((response) => response.data.cases);
 
 const fetchCountries = async () => ({
