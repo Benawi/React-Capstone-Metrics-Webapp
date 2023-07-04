@@ -24,7 +24,40 @@ const Regions = () => {
     dataToShow = countryData;
   }, []);
 
-  
+  return (
+    <>
+      <Header page="regions" />
+      {countryData === undefined && (
+        <div className="loading">
+          <div className="loader" />
+        </div>
+      )}
+      {countryData !== undefined && (
+        <div className="main-container">
+          <div className="total-regions-div">
+            <img src={countryData.countryInfo.flag} alt="Country Flag" className="country-flag" />
+            <div>
+              <span>{country}</span>
+              <span>{`${countryData.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} Cases`}</span>
+            </div>
+          </div>
+          <div className="cases-by-regions">
+            DETAILED INFORMATION
+          </div>
+          <div className="regions">
+            {Object.keys(dataToShow).map((key) => (
+              <div key={key}>
+                <span>{key}</span>
+                <span>
+                  {countryData[key].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Regions;
