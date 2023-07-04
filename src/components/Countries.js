@@ -15,4 +15,8 @@ const Countries = () => {
     dispatch(getCountries());
   }, []);
 
- 
+  const handleSearch = () => {
+    let searchValue = '';
+    if (document.getElementById('search-input')) {
+      searchValue = document.getElementById('search-input').value;
+    }
