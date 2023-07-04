@@ -183,3 +183,7 @@
   max-height: 90%;
 }
 
+.main-container {
+  min-height: calc(100vh - 41px);
+  background-color: var(--first-color);
+}
