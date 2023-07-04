@@ -76,3 +76,29 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--first-color);
+}
+
+.countries a {
+  width: 50%;
+  text-decoration: none;
+  height: 200px;
+}
+
+.countries .country {
+  height: 200px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.countries .country i {
+  color: var(--third-color);
+}
