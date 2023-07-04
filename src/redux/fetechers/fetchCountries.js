@@ -6,6 +6,9 @@ const fetchCountriesCases = async () => axios.get('https://disease.sh/v3/covid-1
 const fetchTotalCases = async () => axios.get('https://disease.sh/v3/covid-19/all')
   .then((response) => response.data.cases);
 
-
+const fetchCountries = async () => ({
+  countries: await fetchCountriesCases(),
+  totalTodayConfirmed: await fetchTotalCases(),
+});
 
 export default fetchCountries;
