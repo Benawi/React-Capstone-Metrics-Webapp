@@ -102,3 +102,62 @@
 .countries .country i {
   color: var(--third-color);
 }
+
+.regions div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  color: white;
+}
+
+.countries .country div {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.regions div span:first-child {
+  font-weight: bold;
+}
+
+.countries .country div span:first-child {
+  font-weight: bold;
+}
+
+.countries .country .fa-arrow-circle-right {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: white;
+}
+
+.regions {
+  background-color: var(--first-color);
+  width: 100%;
+}
+
+.regions .no-regions {
+  width: 100%;
+  height: calc(100vh - 211px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regions .no-regions p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.regions div:nth-child(odd) {
+  background-color: #eb4b8a;
+}
+
+.regions div:nth-child(even) {
+  background-color: #d1447a;
+}
