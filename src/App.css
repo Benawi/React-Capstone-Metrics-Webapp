@@ -170,3 +170,10 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.filter-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
