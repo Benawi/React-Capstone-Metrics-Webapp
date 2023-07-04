@@ -31,3 +31,26 @@
 .total-regions-div div span:nth-child(2) {
   font-size: 15px;
 }
+
+.cases-by-countries,
+.cases-by-regions {
+  padding: 5px 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases-by-countries p {
+  margin: 0;
+}
+
+.cases-by-countries input {
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  width: 135px;
+}
