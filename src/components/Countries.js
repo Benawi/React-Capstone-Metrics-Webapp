@@ -31,6 +31,12 @@ const Countries = () => {
     }
   };
 
+  useEffect(() => {
+    if (countries !== undefined) {
+      setCountriesToShow(countries);
+    }
+  }, [countries]);
+
  
 };
 
