@@ -37,7 +37,51 @@ const Countries = () => {
     }
   }, [countries]);
 
- 
+  return (
+    <>
+      <Header page="countries" />
+      {(countriesToShow === undefined || totalTodayConfirmed === undefined) && (
+        <div className="loading">
+          <div className="loader" />
+        </div>
+      )}
+      {!(countriesToShow === undefined || totalTodayConfirmed === undefined) && (
+        <div className="main-container">
+          <div className="total-countries-div">
+            <i className="fas fa-globe-americas fa-5x" />
+            <div>
+              <span>All Countries</span>
+              <span>{`${totalTodayConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} Cases`}</span>
+            </div>
+          </div>
+          <div className="cases-by-countries">
+            <p>CASES BY COUNTRIES</p>
+            <div className="filter-inputs">
+              <input type="text" id="search-input" onChange={handleSearch} placeholder="Search" />
+            </div>
+          </div>
+          <div className="countries">
+            {countriesToShow.map((country, index) => {
+              if ((index + 1) % 2 === 0) {
+                if (backgroudColorForCountry === '#dc4782') {
+                  backgroudColorForCountry = '#cf4479';
+                } else {
+                  backgroudColorForCountry = '#dc4782';
+                }
+              }
+              return (
+                <CountryItem
+                  key={country.country}
+                  country={country}
+                  backgroundColor={backgroudColorForCountry}
+                />
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Countries;
