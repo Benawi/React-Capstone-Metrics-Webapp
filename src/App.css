@@ -3,3 +3,11 @@
   --second-color: #df4783;
   --third-color: #7b2c4b;
 }
+
+.total-countries-div,
+.total-regions-div {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--first-color);
+  padding: 30px 0;
+}
