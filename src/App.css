@@ -161,3 +161,12 @@
 .regions div:nth-child(even) {
   background-color: #d1447a;
 }
+
+.no-data {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - (253.703px / 2));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
