@@ -27,13 +27,12 @@
     "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4"
   },
-  "engines": {
-    "node": "=18.12.1"
-  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test ",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -70,7 +69,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^3.2.3",
     "jest": "^27.5.1",
     "msw": "^1.2.2",
     "react-testing-library": "^8.0.1",
