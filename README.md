@@ -28,7 +28,7 @@
 
 - [📝 License](#license)
 
-# 📖 React capstone - COVID-19 Metrics webapp  <a name="about-project"></a>
+# 📖 React Capstone - Metrics web App  <a name="about-project"></a>
 
 React capstone project is about building a mobile web application to check a list of metrics (numeric values) that will create making use of React and Redux. project is a repository consisting of the following files:
 
