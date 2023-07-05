@@ -17,7 +17,7 @@ function Header() {
           {new Date().getFullYear()}
         </div>
         <div>
-          World COVID Cases
+          WORLD COVID CASES
         </div>
         <div>
           <FontAwesomeIcon icon={faMicrophoneAlt} />

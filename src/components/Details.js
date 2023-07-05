@@ -19,6 +19,16 @@ const Details = () => {
     active: 0,
     critical: 0,
   };
+  const labels = {
+    cases: 'Total Cases :',
+    todayCases: 'Today Cases :',
+    deaths: 'Total Deaths :',
+    todayDeaths: 'Today Deaths :',
+    recovered: 'Total Recovered :',
+    todayRecovered: 'Today Recovered :',
+    active: 'Active :',
+    critical: 'Critical :',
+  };
   const dispatch = useDispatch();
   const fetched = useSelector((state) => state.countries.length > 0);
   useEffect(() => {
@@ -50,7 +60,7 @@ const Details = () => {
           <div className="Details">
             {Object.keys(dataToShow).map((key) => (
               <div key={key}>
-                <span>{key}</span>
+                <span>{labels[key]}</span>
                 <span>
                   {countryData[key].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                   <FontAwesomeIcon icon={faArrowCircleRight} className="icon iconP" />
