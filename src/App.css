@@ -4,8 +4,33 @@
   --third-color: #7b2c4b;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-color);
+  color: white;
+  padding: 10px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  gap: 10px;
+}
+
+nav .fa-chevron-left,
+nav .fa-microphone,
+nav .fa-cog {
+  display: flex;
+  align-items: center;
+}
+
 .total-countries-div,
-.total-regions-div {
+.total-Details-div {
   display: flex;
   justify-content: space-around;
   background-color: var(--first-color);
@@ -13,13 +38,13 @@
 }
 
 .total-countries-div i,
-.total-regions-div i {
+.total-Details-div i {
   color: var(--third-color);
 }
 
 .total-countries-div div,
-.total-regions-div div {
-  align-self: flex-end;
+.total-Details-div div {
+  align-self: center;
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -28,12 +53,12 @@
 }
 
 .total-countries-div div span:nth-child(2),
-.total-regions-div div span:nth-child(2) {
+.total-Details-div div span:nth-child(2) {
   font-size: 15px;
 }
 
 .cases-by-countries,
-.cases-by-regions {
+.cases-by-Details {
   padding: 5px 10px;
   color: white;
   font-size: 15px;
@@ -69,7 +94,7 @@
   border-top: 16px solid var(--second-color);
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -103,12 +128,13 @@
   color: var(--third-color);
 }
 
-.regions div {
+.Details div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
   color: white;
+  cursor: pointer;
 }
 
 .countries .country div {
@@ -120,7 +146,7 @@
   text-align: right;
 }
 
-.regions div span:first-child {
+.Details div span:first-child {
   font-weight: bold;
 }
 
@@ -135,12 +161,12 @@
   color: white;
 }
 
-.regions {
+.Details {
   background-color: var(--first-color);
   width: 100%;
 }
 
-.regions .no-regions {
+.Details .no-Details {
   width: 100%;
   height: calc(100vh - 211px);
   display: flex;
@@ -148,17 +174,17 @@
   align-items: center;
 }
 
-.regions .no-regions p {
+.Details .no-Details p {
   font-size: 20px;
   font-weight: bold;
   color: white;
 }
 
-.regions div:nth-child(odd) {
+.Details div:nth-child(odd) {
   background-color: #eb4b8a;
 }
 
-.regions div:nth-child(even) {
+.Details div:nth-child(even) {
   background-color: #d1447a;
 }
 
@@ -186,4 +212,12 @@
 .main-container {
   min-height: calc(100vh - 41px);
   background-color: var(--first-color);
+}
+
+.iconP {
+  padding-left: 20px;
+}
+
+.img {
+  width: 370px;
 }
