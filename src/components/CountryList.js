@@ -5,7 +5,7 @@ const CountryItem = (props) => {
   const { country, backgroundColor } = props;
 
   return (
-    <Link to={`/react-capstone/${country.country}`} style={{ backgroundColor }}>
+    <Link to={`/detail/${country.country}`} style={{ backgroundColor }}>
       <div className="country">
         <img src={country.countryInfo.flag} alt="Country Flag" className="country-flag" />
         <div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import getCountries from '../redux/thunk/countries';
 import Header from './Navigation';
 import CountryItem from './CountryList';
+import WorldImage from './worldImages.png';
 
 const Countries = () => {
   const { countries, totalTodayConfirmed } = useSelector((state) => state.countries);
@@ -10,9 +11,11 @@ const Countries = () => {
   let backgroudColorForCountry = '#dc4782';
 
   const dispatch = useDispatch();
-
+  const fetched = useSelector((state) => state.countries.length > 0);
   useEffect(() => {
-    dispatch(getCountries());
+    if (!fetched) {
+      dispatch(getCountries());
+    }
   }, []);
 
   const handleSearch = () => {
@@ -48,16 +51,18 @@ const Countries = () => {
       {!(countriesToShow === undefined || totalTodayConfirmed === undefined) && (
         <div className="main-container">
           <div className="total-countries-div">
-            <i className="fas fa-globe-americas fa-5x" />
+            <div className="img">
+              <img src={WorldImage} alt="world" className="image" />
+            </div>
             <div>
-              <span>All Countries</span>
+              <span>WORLD CASES</span>
               <span>{`${totalTodayConfirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} Cases`}</span>
             </div>
           </div>
           <div className="cases-by-countries">
             <p>CASES BY COUNTRIES</p>
             <div className="filter-inputs">
-              <input type="text" id="search-input" onChange={handleSearch} placeholder="Search" />
+              <input type="text" id="search-input" onChange={handleSearch} placeholder="Search by country" />
             </div>
           </div>
           <div className="countries">
