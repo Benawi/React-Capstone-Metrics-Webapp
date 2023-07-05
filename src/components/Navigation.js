@@ -1,35 +1,44 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import './nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicrophoneAlt, faUserCog, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Header = (props) => {
-  const { page } = props;
+function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
-      {page === 'countries' && (
-        <nav>
-          <div>
-            <i className="fas fa-chevron-left" />
-            {new Date().getFullYear()}
-          </div>
-          <div>
-            Countries COVID Cases
-          </div>
-          <div>
-            <i className="fas fa-microphone" />
-            <i className="fas fa-cog" />
-          </div>
-        </nav>
+      {location.pathname === '/' && (
+      <nav>
+        <div>
+          <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} />
+          <i className="fas fa-chevron" />
+          {new Date().getFullYear()}
+        </div>
+        <div>
+          World COVID Cases
+        </div>
+        <div>
+          <FontAwesomeIcon icon={faMicrophoneAlt} />
+          <FontAwesomeIcon icon={faUserCog} />
+          <i className="fas fa-microphone" />
+          <i className="fas fa-cog" />
+        </div>
+      </nav>
       )}
-      {page === 'regions' && (
+      {location.pathname !== '/' && (
         <nav>
           <div>
+            <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} />
             <Link to="/"><i className="fas fa-chevron-left" /></Link>
           </div>
           <div>
-            Detailed COVID Cases
+            DETAIL COVID CASES
           </div>
           <div>
+            <FontAwesomeIcon icon={faMicrophoneAlt} />
+            <FontAwesomeIcon icon={faUserCog} />
             <i className="fas fa-microphone" />
             <i className="fas fa-cog" />
           </div>
@@ -37,14 +46,6 @@ const Header = (props) => {
       )}
     </>
   );
-};
-
-Header.defaultProps = {
-  page: '',
-};
-
-Header.propTypes = {
-  page: PropTypes.string,
-};
+}
 
 export default Header;

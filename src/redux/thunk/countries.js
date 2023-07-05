@@ -1,4 +1,4 @@
-import fetchCountries from '../fetechers/fetchCountries';
+import fetchCountries from '../fetchers/fetchCountries';
 import getCountriesAction from '../actions/countries';
 
 const getCountries = () => async (dispatch) => {
