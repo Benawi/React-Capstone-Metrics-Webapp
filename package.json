@@ -1,7 +1,7 @@
 {
   "name": "react-capstone-metrics-webapp",
   "version": "0.1.0",
-  "homepage": "https://benawi.github.io/React-Capstone-Metrics-webapp",
+  "homepage":"https://benawi.github.io/React-Capstone-Metrics-webapp/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
