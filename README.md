@@ -60,7 +60,10 @@ React capstone project is about building a mobile web application to check a lis
 - [x] Location-based metrics: The web app will allow users to view COVID-19 metrics for specific countries. This feature will enable users to track the spread of the virus in their desired area and make informed decisions based on local data
 - [x] In the browser tested ; it render without problems, [Metrics webapp online ](http://localhost:3000/React-Capstone-Metrics-webapp)
 - [x] All components and functions of the project tested and [pass all](https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/8d76d6be-8d38-4b7f-bc90-de625e617f0c)
-
+ <div align="center">
+<a href="https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/00776caa-0f40-4636-8d41-4dea46476b0f "><img src="https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/00776caa-0f40-4636-8d41-4dea46476b0f " /></a>
+<a href="https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/9c25fcb2-a9bf-45e9-a727-df4de7e6bd7c"><img src="https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/9c25fcb2-a9bf-45e9-a727-df4de7e6bd7c "/></a>
+</div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🌐 Live Demo <a name="#live-demo"></a>
