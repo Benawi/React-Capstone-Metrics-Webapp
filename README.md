@@ -49,6 +49,7 @@ React capstone project is about building a mobile web application to check a lis
        <li><a href="https://react-redux.js.org/">React Redux</a>
         <li><a href="https://www.npmjs.com/package/redux-logger">Redux Logger</a></li>
          <li><a href="https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/articles/react_router.md">React Router</a></li>
+     <li><a href="https://disease.sh/v3/covid-19/countries">API</a></li>
 </ul>
 
 ## 🔑 Key Features <a name="key-features"></a>
