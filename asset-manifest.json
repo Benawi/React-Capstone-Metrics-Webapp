@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e24c1784.css",
-    "main.js": "/static/js/main.96e8337f.js",
-    "static/media/worldImages.png": "/static/media/worldImages.ae3fa8a907675b943abb.png",
-    "index.html": "/index.html",
-    "main.e24c1784.css.map": "/static/css/main.e24c1784.css.map",
-    "main.96e8337f.js.map": "/static/js/main.96e8337f.js.map"
+    "main.css": "/React-Capstone-Metrics-webapp/static/css/main.e24c1784.css",
+    "main.js": "/React-Capstone-Metrics-webapp/static/js/main.c8ccc67c.js",
+    "static/media/worldImages.png": "/React-Capstone-Metrics-webapp/static/media/worldImages.ae3fa8a907675b943abb.png",
+    "index.html": "/React-Capstone-Metrics-webapp/index.html",
+    "main.e24c1784.css.map": "/React-Capstone-Metrics-webapp/static/css/main.e24c1784.css.map",
+    "main.c8ccc67c.js.map": "/React-Capstone-Metrics-webapp/static/js/main.c8ccc67c.js.map"
   },
   "entrypoints": [
     "static/css/main.e24c1784.css",
-    "static/js/main.96e8337f.js"
+    "static/js/main.c8ccc67c.js"
   ]
 }
