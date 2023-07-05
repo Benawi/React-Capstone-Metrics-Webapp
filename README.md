@@ -56,9 +56,9 @@ React capstone project is about building a mobile web application to check a lis
 ### React capstone - COVID-19 Metrics web app : [Requirements](https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md)
 
 - [x] Real-time data updates: The React capstone - COVID-19 Metrics web app will provide real-time updates on COVID-19 metrics such as the number of cases, deaths, and recoveries. 
-- [x] Location-based metrics: The web app will allow users to view COVID-19 metrics for specific locations such as countries, continent. This feature will enable users to track the spread of the virus in their desired area and make informed decisions based on local data
+- [x] Location-based metrics: The web app will allow users to view COVID-19 metrics for specific countries. This feature will enable users to track the spread of the virus in their desired area and make informed decisions based on local data
 - [x] In the browser tested ; it render without problems, [Metrics webapp online ](http://localhost:3000/React-Capstone-Metrics-webapp)
-- [x] All components and functions of the project tested and [pass all](https://github.com/Nahid1911/space-travelers-proj-react/assets/21217148/cf7d6060-a326-418c-81c7-b2eaf25a7c54)
+- [x] All components and functions of the project tested and [pass all](https://github.com/Benawi/React-Capstone-Metrics-webapp/assets/21217148/8d76d6be-8d38-4b7f-bc90-de625e617f0c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
