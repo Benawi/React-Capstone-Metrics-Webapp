@@ -11,12 +11,12 @@ describe('reducer', () => {
     const newState = reducer(initialState, action);
 
     // Verify that the state is updated correctly with the payload of the action
-    expect(newState).toEqual({ active: 20, death: 25});
+    expect(newState).toEqual({ active: 20, death: 25 });
   });
 
   it('should return the current state when receiving an unhandled action', () => {
     // Define the initial state and the action with unknown type
-    const initialState = { active: 20, death: 25};
+    const initialState = { active: 20, death: 25 };
     const action = { type: 'UNKNOWN_TYPE', payload: 'some data' };
 
     // Call the reducer with the initial state and the action
