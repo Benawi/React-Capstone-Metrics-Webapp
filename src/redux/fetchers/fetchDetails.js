@@ -1,6 +1,13 @@
-import axios from 'axios';
+const fetchDetails = async (Detail) => {
+  const url = `https://disease.sh/v3/covid-19/countries/${Detail}`;
 
-const fetchDetails = async (Detail) => axios.get(`https://disease.sh/v3/covid-19/countries/${Detail}`)
-  .then((response) => ({ countryData: response.data }));
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return { countryData: data };
+  } catch (error) {
+    return error;
+  }
+};
 
 export default fetchDetails;
