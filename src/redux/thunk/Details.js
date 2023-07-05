@@ -1,4 +1,4 @@
-import fetchDetails from '../fetechers/fetchDetails';
+import fetchDetails from '../fetchers/fetchDetails';
 import getDetailsAction from '../actions/Details';
 
 const getDetails = (Detail) => async (dispatch) => {
