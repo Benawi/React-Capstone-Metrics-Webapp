@@ -3,7 +3,7 @@
 ### <div align="center"><a href="https://github.com/Benawi"><img src="https://github.com/Benawi/Benawi/assets/21217148/de823737-5f7f-4de8-b62e-3fe88c238eab"/></a>
 
  </div> 
-<div align="center">🛰React Capstone -COVID-19 Metrics web App 🚀</div>
+<div align="center">🛰React Capstone -COVID-19 Metrics Web App 🚀</div>
 
 # 📗 Table of Contents
 
