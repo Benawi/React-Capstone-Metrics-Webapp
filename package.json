@@ -27,6 +27,9 @@
     "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4"
   },
+  "engines": {
+    "node": ">=18 <19"
+  },
   "scripts": {
     "deploy": "npm run build",
     "start": "react-scripts start",
