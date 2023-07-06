@@ -1,0 +1,25 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-color);
+  color: white;
+  padding: 10px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  gap: 10px;
+}
+
+nav .fa-chevron-left,
+nav .fa-microphone,
+nav .fa-cog {
+  display: flex;
+  align-items: center;
+}
