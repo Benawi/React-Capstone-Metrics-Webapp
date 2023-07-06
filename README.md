@@ -73,7 +73,7 @@ React capstone project is about building a mobile web application to check a lis
 
 ## 👁 Walkthrough <a name="#Walkthrough"></a>
 
-[React capstone - Metrics web App Walkthrough](https://www.loom.com/share/19e7daeabaaf4c158ed44761af057b73?sid=2d4ce784-f77d-437a-9af2-70471bb8623f)
+- [React capstone - Metrics web App Walkthrough](https://www.loom.com/share/19e7daeabaaf4c158ed44761af057b73?sid=2d4ce784-f77d-437a-9af2-70471bb8623f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
