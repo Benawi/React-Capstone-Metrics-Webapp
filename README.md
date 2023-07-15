@@ -5,7 +5,7 @@
  </div> 
 <div align="center">🛰React Capstone -COVID-19 Metrics Web App 🚀</div>
 
-# 📗 Table of Contents
+# 📗 Table of Content
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
